@@ -1,0 +1,23 @@
+<additional>
+    <!-- Motorcycles/scooters -->
+    <vType id="motorcycle" vClass="motorcycle" length="1.85" width="0.7" maxSpeed="16.67" accel="1.7" decel="5.0" 
+           sigma="0.8" minGap="0.3" lcCooperative="0.2" lcSpeedGain="1.5" lcKeepRight="0.3"
+           laneChangeModel="SL2015" latAlignment="arbitrary"/>
+    
+    <!-- Small cars -->
+    <vType id="small_car" vClass="passenger" length="3.8" width="1.7" maxSpeed="15.27" accel="1.2" decel="4.5" 
+           sigma="0.6" minGap="0.8" lcCooperative="0.4" lcSpeedGain="1.0"
+           laneChangeModel="SL2015" latAlignment="center"/>
+    
+    <!-- Taxi -->
+    <vType id="taxi" vClass="taxi" length="4.3" width="1.8" maxSpeed="15.27" accel="1.0" decel="4.5" 
+           color="1,1,0" sigma="0.5" minGap="1.0" lcCooperative="0.5"/>
+           
+    <!-- Buses -->
+    <vType id="bus" vClass="bus" length="12.0" width="2.5" maxSpeed="11.11" accel="0.8" decel="3.5" 
+           sigma="0.4" minGap="1.5" lcCooperative="0.3"/>
+           
+    <!-- Delivery trucks -->
+    <vType id="truck" vClass="delivery" length="6.0" width="2.3" maxSpeed="12.50" accel="0.7" decel="4.0" 
+           sigma="0.5" minGap="1.2" lcCooperative="0.3"/>
+</additional>

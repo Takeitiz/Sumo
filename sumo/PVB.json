@@ -1,0 +1,167 @@
+[
+  {
+    "sumoId": "C",
+    "intersectionId": 1,
+    "saturationVolume": 1900,
+    "stages": [
+      {
+        "id": 1,
+        "oldId": "stage1",
+        "phaseIndex": 0,
+        "minGreenTime": 15,
+        "maxGreenTime": 60,
+        "yellow": 3,
+        "redClear": 2,
+        "weight": 0.5,
+        "lamps": [
+          {
+            "direction": "north",
+            "route": "straight"
+          },
+          {
+            "direction": "north",
+            "route": "right"
+          },
+          {
+            "direction": "south",
+            "route": "straight"
+          },
+          {
+            "direction": "south",
+            "route": "right"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "oldId": "stage2",
+        "phaseIndex": 1,
+        "minGreenTime": 15,
+        "maxGreenTime": 60,
+        "yellow": 3,
+        "redClear": 2,
+        "weight": 0.3,
+        "lamps": [
+          {
+            "direction": "east",
+            "route": "straight"
+          },
+          {
+            "direction": "east",
+            "route": "right"
+          },
+          {
+            "direction": "east",
+            "route": "left"
+          },
+          {
+            "direction": "west",
+            "route": "straight"
+          },
+          {
+            "direction": "west",
+            "route": "right"
+          },
+          {
+            "direction": "west",
+            "route": "left"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "oldId": "stage3",
+        "phaseIndex": 2,
+        "minGreenTime": 10,
+        "maxGreenTime": 30,
+        "yellow": 3,
+        "redClear": 2,
+        "weight": 0.2,
+        "lamps": [
+          {
+            "direction": "north",
+            "route": "left"
+          },
+          {
+            "direction": "south",
+            "route": "left"
+          }
+        ]
+      }
+    ],
+    "roads": [
+      {
+        "direction": "north",
+        "numberOfLanes": 3,
+        "flows": [
+          {
+            "direction": "north",
+            "route": "straight",
+            "flowData": 100,
+            "lane": "N2C_1"
+          },
+          {
+            "direction": "north",
+            "route": "right",
+            "flowData": 100,
+            "lane": "N2C_0"
+          },
+          {
+            "direction": "north",
+            "route": "left",
+            "flowData": 100,
+            "lane": "N2C_2"
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "numberOfLanes": 3,
+        "flows": [
+          {
+            "direction": "south",
+            "route": "straight",
+            "flowData": 100,
+            "lane": "S2C_1"
+          },
+          {
+            "direction": "south",
+            "route": "right",
+            "flowData": 100,
+            "lane": "S2C_0"
+          },
+          {
+            "direction": "south",
+            "route": "left",
+            "flowData": 100,
+            "lane": "S2C_2"
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "numberOfLanes": 1,
+        "flows": [
+          {
+            "direction": "east",
+            "route": "straight",
+            "flowData": 100,
+            "lane": "E2C_0"
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "numberOfLanes": 1,
+        "flows": [
+          {
+            "direction": "west",
+            "route": "straight",
+            "flowData": 100,
+            "lane": "W2C_0"
+          }
+        ]
+      }
+    ]
+  }
+]
