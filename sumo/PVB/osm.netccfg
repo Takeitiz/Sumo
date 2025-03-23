@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-03-10 16:09:28 by Eclipse SUMO netconvert Version 1.22.0
+<!-- generated on 2025-03-23 17:05:01 by Eclipse SUMO netconvert Version 1.22.0
 -->
 
 <netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
@@ -11,7 +11,7 @@
     </input>
 
     <output>
-        <output-file value="osm.net.xml.gz"/>
+        <output-file value="osm.net.xml"/>
         <output.street-names value="true"/>
         <output.original-names value="true"/>
     </output>
