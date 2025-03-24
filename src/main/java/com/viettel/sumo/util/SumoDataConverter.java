@@ -48,6 +48,7 @@ public class SumoDataConverter {
                 lamps.add(lamp);
             }
             stage.setLamps(lamps);
+            stages.add(stage);
         }
         input.setStages(stages);
 
@@ -69,9 +70,11 @@ public class SumoDataConverter {
                 flows.add(flow);
             }
             road.setFlows(flows);
+            roads.add(road);
         }
         input.setRoads(roads);
 
+        System.out.println(input);
         return input;
     }
 
