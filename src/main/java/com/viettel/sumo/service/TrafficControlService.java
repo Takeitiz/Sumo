@@ -5,6 +5,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.eclipse.sumo.libtraci.StringVector;
 import org.eclipse.sumo.libtraci.TraCILogic;
+import org.eclipse.sumo.libtraci.TraCILogicVector;
 import org.eclipse.sumo.libtraci.TrafficLight;
 import org.springframework.stereotype.Service;
 
@@ -100,9 +101,27 @@ public class TrafficControlService {
     private void resetToNormalOperation() {
         StringVector tlIDs = TrafficLight.getIDList();
         for (String tlID : tlIDs) {
-            // Reset to the original program logic
-            TrafficLight.setPhaseDuration(tlID, -1); // -1 means use the original duration
-            log.debug("Reset traffic light {} to normal operation", tlID);
+            try {
+                // Get the current program ID
+                String programID = TrafficLight.getProgram(tlID);
+
+                // Get the complete definition
+                TraCILogicVector logics = TrafficLight.getCompleteRedYellowGreenDefinition(tlID);
+                if (!logics.isEmpty()) {
+                    // Reset the program logic
+                    TrafficLight.setProgramLogic(tlID, logics.get(0));
+
+                    // Reset the phase (optionally go to phase 0)
+                    TrafficLight.setPhase(tlID, 0);
+
+                    // Set the phase duration to default
+                    TrafficLight.setPhaseDuration(tlID, -1);
+
+                    log.debug("Reset traffic light {} to normal operation", tlID);
+                }
+            } catch (Exception e) {
+                log.error("Error resetting traffic light {}: {}", tlID, e.getMessage());
+            }
         }
     }
 
@@ -112,13 +131,30 @@ public class TrafficControlService {
     private void advanceToNextPhase() {
         StringVector tlIDs = TrafficLight.getIDList();
         for (String tlID : tlIDs) {
-            int currentPhase = TrafficLight.getPhase(tlID);
-            TraCILogic logic = TrafficLight.getCompleteRedYellowGreenDefinition(tlID).get(0);
-            int numberOfPhases = logic.getPhases().size();
+            try {
+                // Get current phase and program information
+                int currentPhase = TrafficLight.getPhase(tlID);
+                TraCILogic logic = TrafficLight.getCompleteRedYellowGreenDefinition(tlID).get(0);
+                int numberOfPhases = logic.getPhases().size();
 
-            int nextPhase = (currentPhase + 1) % numberOfPhases;
-            TrafficLight.setPhase(tlID, nextPhase);
-            log.debug("Advanced traffic light {} from phase {} to {}", tlID, currentPhase, nextPhase);
+                if (numberOfPhases <= 1) {
+                    log.info("Traffic light {} has only {} phase(s), cannot advance", tlID, numberOfPhases);
+                    continue;
+                }
+
+                // Determine the current major phase (0, 3, or 6 in your case)
+                int currentMajorPhase = currentPhase - (currentPhase % 3);
+
+                // Calculate the next major phase (with wraparound)
+                int nextMajorPhase = (currentMajorPhase + 3) % 9;
+
+                // Set the next phase
+                TrafficLight.setPhase(tlID, nextMajorPhase);
+                log.debug("Advanced traffic light {} from phase {} to major phase {}",
+                        tlID, currentPhase, nextMajorPhase);
+            } catch (Exception e) {
+                log.error("Error advancing phase for traffic light {}: {}", tlID, e.getMessage());
+            }
         }
     }
 

@@ -14,17 +14,12 @@
     <div class="panel simulation-panel">
         <h2>Simulation Control</h2>
         <div class="button-group">
-            <button id="startSimulation" class="control-button start-button">
-                Start Simulation
-            </button>
-            <button id="stopSimulation" class="control-button stop-button">
-                Stop Simulation
-            </button>
+            <!-- Change to input type button for better compatibility -->
+            <input type="button" id="startSimulation" class="control-button start-button" value="Start Simulation" onclick="startSimulation()">
+            <input type="button" id="stopSimulation" class="control-button stop-button" value="Stop Simulation" onclick="stopSimulation()">
             <div class="run-steps-container">
                 <input type="number" id="stepsInput" min="1" max="1000" value="100" />
-                <button id="runSteps" class="control-button run-steps-button">
-                    Run Steps
-                </button>
+                <input type="button" id="runSteps" class="control-button run-steps-button" value="Run Steps" onclick="runSimulationSteps()">
             </div>
         </div>
         <div id="simulationStatus" class="status">
@@ -36,22 +31,22 @@
     <div class="panel traffic-panel">
         <h2>Traffic Light Control</h2>
         <div class="control-panel">
-            <button class="control-button red-mode" data-mode="RED_MODE">
+            <button class="control-button red-mode" data-mode="RED_MODE" onclick="setTrafficControlMode('RED_MODE')">
                 Emergency Stop<br>(All Red)
             </button>
-            <button class="control-button yellow-mode" data-mode="YELLOW_MODE">
+            <button class="control-button yellow-mode" data-mode="YELLOW_MODE" onclick="setTrafficControlMode('YELLOW_MODE')">
                 Caution<br>(All Yellow)
             </button>
-            <button class="control-button normal-mode" data-mode="NORMAL_MODE">
+            <button class="control-button normal-mode" data-mode="NORMAL_MODE" onclick="setTrafficControlMode('NORMAL_MODE')">
                 Normal<br>Operation
             </button>
-            <button class="control-button next-phase" data-mode="NEXT_PHASE_MODE">
+            <button class="control-button next-phase" data-mode="NEXT_PHASE_MODE" onclick="setTrafficControlMode('NEXT_PHASE_MODE')">
                 Next<br>Phase
             </button>
-            <button class="control-button lights-off" data-mode="LIGHTS_OFF_MODE">
+            <button class="control-button lights-off" data-mode="LIGHTS_OFF_MODE" onclick="setTrafficControlMode('LIGHTS_OFF_MODE')">
                 Lights<br>Off
             </button>
-            <button class="control-button adaptive-mode" data-mode="ADAPTIVE_MODE">
+            <button class="control-button adaptive-mode" data-mode="ADAPTIVE_MODE" onclick="setTrafficControlMode('ADAPTIVE_MODE')">
                 Adaptive<br>Control
             </button>
         </div>
