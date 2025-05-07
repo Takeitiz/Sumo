@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-03-24 17:21:02 by Eclipse SUMO GUI Version 1.22.0
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value=".\osm.net.xml"/>
+        <route-files value=".\pvb.rou.xml"/>
+        <additional-files value=".\osm.add.xml"/>
+    </input>
+
+    <processing>
+        <lateral-resolution value="0.5"/>
+        <ignore-route-errors value="true"/>
+        <tls.actuated.jam-threshold value="30"/>
+    </processing>
+
+    <routing>
+        <device.rerouting.adaptation-steps value="18"/>
+        <device.rerouting.adaptation-interval value="10"/>
+    </routing>
+
+    <report>
+        <verbose value="true"/>
+        <duration-log.statistics value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <gui_only>
+        <gui-settings-file value=".\osm.view.xml"/>
+    </gui_only>
+
+</sumoConfiguration>
+-->
+
+<instantE1 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/instant_e1_file.xsd">
+    <instantOut id="e1i_E0" time="35.69" state="enter" vehID="m2" speed="10.89" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="35.88" state="leave" vehID="m2" speed="10.89" length="2.10" type="moped" occupancy="0.19"/>
+    <instantOut id="e1i_E0" time="60.34" state="enter" vehID="c19" speed="15.65" length="5.00" type="car" gap="24.45"/>
+    <instantOut id="e1i_E0" time="60.66" state="leave" vehID="c19" speed="15.65" length="5.00" type="car" occupancy="0.32"/>
+    <instantOut id="e1i_E0" time="139.81" state="enter" vehID="m31" speed="0.89" length="2.10" type="moped" gap="79.15"/>
+    <instantOut id="e1i_E0" time="140.00" state="stay" vehID="m31" speed="0.89" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="141.00" state="stay" vehID="m31" speed="1.63" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="140.03" state="enter" vehID="c29" speed="2.93" length="5.00" type="car" gap="79.37"/>
+    <instantOut id="e1i_E0" time="141.00" state="stay" vehID="c29" speed="2.93" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="141.15" state="leave" vehID="m31" speed="2.04" length="2.10" type="moped" occupancy="1.34"/>
+    <instantOut id="e1i_E0" time="141.40" state="leave" vehID="c29" speed="5.43" length="5.00" type="car" occupancy="1.37"/>
+    <instantOut id="e1i_E0" time="143.02" state="enter" vehID="m46" speed="2.78" length="2.10" type="moped" gap="1.62"/>
+    <instantOut id="e1i_E0" time="143.78" state="leave" vehID="m46" speed="2.78" length="2.10" type="moped" occupancy="0.75"/>
+    <instantOut id="e1i_E0" time="143.31" state="enter" vehID="c24" speed="3.06" length="5.00" type="car" gap="-0.47"/>
+    <instantOut id="e1i_E0" time="144.00" state="stay" vehID="c24" speed="3.06" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="144.79" state="leave" vehID="c24" speed="3.64" length="5.00" type="car" occupancy="1.48"/>
+    <instantOut id="e1i_E0" time="145.40" state="enter" vehID="m52" speed="2.87" length="2.10" type="moped" gap="0.61"/>
+    <instantOut id="e1i_E0" time="146.00" state="stay" vehID="m52" speed="2.87" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="146.10" state="leave" vehID="m52" speed="3.80" length="2.10" type="moped" occupancy="0.70"/>
+    <instantOut id="e1i_E0" time="146.24" state="enter" vehID="c37" speed="3.12" length="5.00" type="car" gap="0.14"/>
+    <instantOut id="e1i_E0" time="147.00" state="stay" vehID="c37" speed="3.12" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="147.73" state="leave" vehID="c37" speed="3.59" length="5.00" type="car" occupancy="1.49"/>
+    <instantOut id="e1i_E0" time="149.18" state="enter" vehID="c39" speed="3.43" length="5.00" type="car" gap="1.45"/>
+    <instantOut id="e1i_E0" time="150.00" state="stay" vehID="c39" speed="3.43" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="150.44" state="leave" vehID="c39" speed="5.06" length="5.00" type="car" occupancy="1.25"/>
+    <instantOut id="e1i_E0" time="151.96" state="enter" vehID="c41" speed="4.77" length="5.00" type="car" gap="1.52"/>
+    <instantOut id="e1i_E0" time="152.00" state="stay" vehID="c41" speed="4.77" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="152.83" state="leave" vehID="c41" speed="5.78" length="5.00" type="car" occupancy="0.87"/>
+    <instantOut id="e1i_E0" time="154.97" state="enter" vehID="m57" speed="8.06" length="2.10" type="moped" gap="2.14"/>
+    <instantOut id="e1i_E0" time="155.00" state="stay" vehID="m57" speed="8.06" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="155.22" state="leave" vehID="m57" speed="8.49" length="2.10" type="moped" occupancy="0.25"/>
+    <instantOut id="e1i_E0" time="155.26" state="enter" vehID="c48" speed="10.07" length="5.00" type="car" gap="0.03"/>
+    <instantOut id="e1i_E0" time="155.75" state="leave" vehID="c48" speed="10.07" length="5.00" type="car" occupancy="0.50"/>
+    <instantOut id="e1i_E0" time="165.01" state="enter" vehID="c51" speed="13.99" length="5.00" type="car" gap="9.26"/>
+    <instantOut id="e1i_E0" time="165.37" state="leave" vehID="c51" speed="13.99" length="5.00" type="car" occupancy="0.36"/>
+    <instantOut id="e1i_E0" time="244.86" state="enter" vehID="m84" speed="0.83" length="2.10" type="moped" gap="79.49"/>
+    <instantOut id="e1i_E0" time="245.00" state="stay" vehID="m84" speed="0.83" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="244.33" state="enter" vehID="c58" speed="2.19" length="5.00" type="car" gap="78.96"/>
+    <instantOut id="e1i_E0" time="245.00" state="stay" vehID="c58" speed="2.19" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="245.84" state="leave" vehID="c58" speed="4.22" length="5.00" type="car" occupancy="1.51"/>
+    <instantOut id="e1i_E0" time="246.00" state="stay" vehID="m84" speed="0.05" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="247.00" state="stay" vehID="m84" speed="0.02" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="248.00" state="stay" vehID="m84" speed="0.35" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="247.45" state="enter" vehID="c63" speed="5.19" length="5.00" type="car" gap="1.62"/>
+    <instantOut id="e1i_E0" time="248.00" state="stay" vehID="c63" speed="5.19" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="249.00" state="stay" vehID="m84" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="248.32" state="leave" vehID="c63" speed="6.72" length="5.00" type="car" occupancy="0.87"/>
+    <instantOut id="e1i_E0" time="250.00" state="stay" vehID="m84" speed="0.63" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="250.68" state="leave" vehID="m84" speed="1.38" length="2.10" type="moped" occupancy="5.82"/>
+    <instantOut id="e1i_E0" time="252.24" state="enter" vehID="m90" speed="1.33" length="2.10" type="moped" gap="1.55"/>
+    <instantOut id="e1i_E0" time="253.00" state="stay" vehID="m90" speed="1.33" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="252.02" state="enter" vehID="c68" speed="0.73" length="5.00" type="car" gap="1.33"/>
+    <instantOut id="e1i_E0" time="253.00" state="stay" vehID="c68" speed="0.73" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="253.54" state="leave" vehID="m90" speed="1.99" length="2.10" type="moped" occupancy="1.31"/>
+    <instantOut id="e1i_E0" time="254.00" state="stay" vehID="c68" speed="1.70" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="255.00" state="stay" vehID="c68" speed="0.75" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="256.00" state="stay" vehID="c68" speed="0.15" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="257.00" state="stay" vehID="c68" speed="0.17" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="258.00" state="stay" vehID="c68" speed="0.04" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="259.00" state="stay" vehID="c68" speed="0.03" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="260.00" state="stay" vehID="c68" speed="0.00" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="261.00" state="stay" vehID="c68" speed="0.00" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="262.00" state="stay" vehID="c68" speed="0.00" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="263.00" state="stay" vehID="c68" speed="0.00" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="264.00" state="stay" vehID="c68" speed="0.00" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="265.00" state="stay" vehID="c68" speed="0.00" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="266.00" state="stay" vehID="c68" speed="0.00" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="267.00" state="stay" vehID="c68" speed="0.00" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="268.00" state="stay" vehID="c68" speed="0.00" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="269.00" state="stay" vehID="c68" speed="0.00" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="270.00" state="stay" vehID="c68" speed="0.00" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="271.00" state="stay" vehID="c68" speed="0.00" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="272.00" state="stay" vehID="c68" speed="0.00" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="273.00" state="stay" vehID="c68" speed="0.00" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="274.00" state="stay" vehID="c68" speed="0.00" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="275.00" state="stay" vehID="c68" speed="0.00" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="274.65" state="enter" vehID="m103" speed="3.74" length="2.10" type="moped" gap="21.11"/>
+    <instantOut id="e1i_E0" time="275.00" state="stay" vehID="m103" speed="3.74" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="276.00" state="stay" vehID="m103" speed="0.38" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="276.00" state="stay" vehID="c68" speed="0.00" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="277.00" state="stay" vehID="m103" speed="0.12" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="277.00" state="stay" vehID="c68" speed="0.00" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="278.00" state="stay" vehID="m103" speed="0.06" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="278.00" state="stay" vehID="c68" speed="0.00" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="279.00" state="stay" vehID="m103" speed="0.06" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="279.00" state="stay" vehID="c68" speed="0.00" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="280.00" state="stay" vehID="m103" speed="0.04" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="280.00" state="stay" vehID="c68" speed="0.80" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="280.67" state="leave" vehID="m103" speed="0.24" length="2.10" type="moped" occupancy="6.02"/>
+    <instantOut id="e1i_E0" time="280.20" state="leave" vehID="c68" speed="3.24" length="5.00" type="car" occupancy="28.18"/>
+    <instantOut id="e1i_E0" time="349.79" state="enter" vehID="m101" speed="0.91" length="2.10" type="moped" gap="69.59"/>
+    <instantOut id="e1i_E0" time="350.00" state="stay" vehID="m101" speed="0.91" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="349.35" state="enter" vehID="c71" speed="2.04" length="5.00" type="car" gap="69.15"/>
+    <instantOut id="e1i_E0" time="350.00" state="stay" vehID="c71" speed="2.04" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="350.92" state="leave" vehID="c71" speed="3.99" length="5.00" type="car" occupancy="1.57"/>
+    <instantOut id="e1i_E0" time="351.00" state="stay" vehID="m101" speed="1.32" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="351.26" state="leave" vehID="m101" speed="2.27" length="2.10" type="moped" occupancy="1.47"/>
+    <instantOut id="e1i_E0" time="353.49" state="enter" vehID="m121" speed="1.90" length="2.10" type="moped" gap="2.23"/>
+    <instantOut id="e1i_E0" time="354.00" state="stay" vehID="m121" speed="1.90" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="354.40" state="leave" vehID="m121" speed="2.86" length="2.10" type="moped" occupancy="0.90"/>
+    <instantOut id="e1i_E0" time="356.01" state="enter" vehID="c81" speed="2.67" length="5.00" type="car" gap="1.61"/>
+    <instantOut id="e1i_E0" time="357.00" state="stay" vehID="c81" speed="2.67" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="357.45" state="leave" vehID="c81" speed="5.21" length="5.00" type="car" occupancy="1.44"/>
+    <instantOut id="e1i_E0" time="359.05" state="enter" vehID="c111" speed="5.98" length="5.00" type="car" gap="1.59"/>
+    <instantOut id="e1i_E0" time="359.88" state="leave" vehID="c111" speed="5.98" length="5.00" type="car" occupancy="0.84"/>
+    <instantOut id="e1i_E0" time="361.20" state="enter" vehID="c121" speed="7.67" length="5.00" type="car" gap="1.32"/>
+    <instantOut id="e1i_E0" time="361.85" state="leave" vehID="c121" speed="7.67" length="5.00" type="car" occupancy="0.65"/>
+    <instantOut id="e1i_E0" time="370.68" state="enter" vehID="c124" speed="8.33" length="5.00" type="car" gap="8.83"/>
+    <instantOut id="e1i_E0" time="371.00" state="stay" vehID="c124" speed="8.33" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="371.62" state="leave" vehID="c124" speed="3.83" length="5.00" type="car" occupancy="0.93"/>
+    <instantOut id="e1i_E0" time="372.34" state="enter" vehID="m135" speed="10.67" length="2.10" type="moped" gap="0.73"/>
+    <instantOut id="e1i_E0" time="372.54" state="leave" vehID="m135" speed="10.67" length="2.10" type="moped" occupancy="0.20"/>
+    <instantOut id="e1i_E0" time="454.40" state="enter" vehID="c130" speed="1.81" length="5.00" type="car" gap="81.86"/>
+    <instantOut id="e1i_E0" time="455.00" state="stay" vehID="c130" speed="1.81" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="456.00" state="stay" vehID="c130" speed="3.17" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="455.18" state="enter" vehID="m139" speed="0.91" length="2.10" type="moped" gap="82.64"/>
+    <instantOut id="e1i_E0" time="456.00" state="stay" vehID="m139" speed="0.91" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="456.15" state="leave" vehID="c130" speed="4.99" length="5.00" type="car" occupancy="1.75"/>
+    <instantOut id="e1i_E0" time="456.70" state="leave" vehID="m139" speed="1.95" length="2.10" type="moped" occupancy="1.51"/>
+    <instantOut id="e1i_E0" time="457.62" state="enter" vehID="c141" speed="4.41" length="5.00" type="car" gap="0.92"/>
+    <instantOut id="e1i_E0" time="458.00" state="stay" vehID="c141" speed="4.41" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="458.78" state="leave" vehID="c141" speed="4.23" length="5.00" type="car" occupancy="1.17"/>
+    <instantOut id="e1i_E0" time="461.10" state="enter" vehID="m156" speed="3.21" length="2.10" type="moped" gap="2.32"/>
+    <instantOut id="e1i_E0" time="461.76" state="leave" vehID="m156" speed="3.21" length="2.10" type="moped" occupancy="0.65"/>
+    <instantOut id="e1i_E0" time="461.46" state="enter" vehID="m149" speed="2.79" length="2.10" type="moped" gap="-0.30"/>
+    <instantOut id="e1i_E0" time="462.00" state="stay" vehID="m149" speed="2.79" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="463.00" state="stay" vehID="m149" speed="0.10" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="462.86" state="enter" vehID="m140" speed="0.89" length="2.10" type="moped" gap="1.10"/>
+    <instantOut id="e1i_E0" time="463.00" state="stay" vehID="m140" speed="0.89" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="464.00" state="stay" vehID="m149" speed="0.02" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="464.00" state="stay" vehID="m140" speed="1.44" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="465.00" state="stay" vehID="m140" speed="0.09" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="465.00" state="stay" vehID="m149" speed="0.01" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="466.00" state="stay" vehID="m140" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="466.00" state="stay" vehID="m149" speed="0.01" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="467.00" state="stay" vehID="m140" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="467.00" state="stay" vehID="m149" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="468.00" state="stay" vehID="m140" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="468.00" state="stay" vehID="m149" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="469.00" state="stay" vehID="m140" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="469.00" state="stay" vehID="m149" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="470.00" state="stay" vehID="m140" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="470.00" state="stay" vehID="m149" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="471.00" state="stay" vehID="m140" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="471.00" state="stay" vehID="m149" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="472.00" state="stay" vehID="m140" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="472.00" state="stay" vehID="m149" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="473.00" state="stay" vehID="m140" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="473.00" state="stay" vehID="m149" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="474.00" state="stay" vehID="m140" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="474.00" state="stay" vehID="m149" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="475.00" state="stay" vehID="m140" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="475.00" state="stay" vehID="m149" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="476.00" state="stay" vehID="m140" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="476.00" state="stay" vehID="m149" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="475.96" state="enter" vehID="m179" speed="0.82" length="2.10" type="moped" gap="14.20"/>
+    <instantOut id="e1i_E0" time="476.00" state="stay" vehID="m179" speed="0.82" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="477.00" state="stay" vehID="m140" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="477.00" state="stay" vehID="m149" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="477.00" state="stay" vehID="m179" speed="0.11" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="478.00" state="stay" vehID="m140" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="478.00" state="stay" vehID="m149" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="478.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="479.00" state="stay" vehID="m140" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="479.00" state="stay" vehID="m149" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="479.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="480.00" state="stay" vehID="m140" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="480.00" state="stay" vehID="m149" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="480.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="481.00" state="stay" vehID="m140" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="481.00" state="stay" vehID="m149" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="481.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="482.00" state="stay" vehID="m140" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="482.00" state="stay" vehID="m149" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="482.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="483.00" state="stay" vehID="m140" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="483.00" state="stay" vehID="m149" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="483.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="484.00" state="stay" vehID="m140" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="484.00" state="stay" vehID="m149" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="484.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="485.00" state="stay" vehID="m140" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="485.00" state="stay" vehID="m149" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="485.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="486.00" state="stay" vehID="m140" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="486.00" state="stay" vehID="m149" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="486.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="487.00" state="stay" vehID="m140" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="487.00" state="stay" vehID="m149" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="487.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="487.71" state="leave" vehID="m140" speed="0.62" length="2.10" type="moped" occupancy="24.86"/>
+    <instantOut id="e1i_E0" time="488.00" state="stay" vehID="m149" speed="0.35" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="488.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="488.10" state="leave" vehID="m149" speed="0.97" length="2.10" type="moped" occupancy="26.64"/>
+    <instantOut id="e1i_E0" time="489.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="490.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="491.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="492.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="493.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="494.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="495.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="496.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="497.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="498.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="499.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="500.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="501.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="502.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="503.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="504.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="505.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="506.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="507.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="508.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="509.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="510.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="511.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="512.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="513.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="514.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="515.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="516.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="517.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="518.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="519.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="520.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="521.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="522.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="523.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="524.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="525.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="526.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="527.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="528.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="529.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="530.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="531.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="532.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="533.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="534.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="535.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="536.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="537.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="538.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="539.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="540.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="541.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="542.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="543.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="544.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="545.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="546.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="547.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="548.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="549.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="550.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="551.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="552.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="553.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="554.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="555.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="556.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="557.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="558.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="559.00" state="stay" vehID="m179" speed="0.00" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="560.00" state="stay" vehID="m179" speed="0.80" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="559.33" state="enter" vehID="c150" speed="2.17" length="5.00" type="car" gap="71.23"/>
+    <instantOut id="e1i_E0" time="560.00" state="stay" vehID="c150" speed="2.17" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="560.70" state="leave" vehID="m179" speed="1.66" length="2.10" type="moped" occupancy="84.74"/>
+    <instantOut id="e1i_E0" time="560.78" state="leave" vehID="c150" speed="4.56" length="5.00" type="car" occupancy="1.45"/>
+    <instantOut id="e1i_E0" time="562.41" state="enter" vehID="m177" speed="1.78" length="2.10" type="moped" gap="1.63"/>
+    <instantOut id="e1i_E0" time="563.00" state="stay" vehID="m177" speed="1.78" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="563.44" state="leave" vehID="m177" speed="2.38" length="2.10" type="moped" occupancy="1.03"/>
+    <instantOut id="e1i_E0" time="565.73" state="enter" vehID="m197" speed="1.98" length="2.10" type="moped" gap="2.29"/>
+    <instantOut id="e1i_E0" time="566.00" state="stay" vehID="m197" speed="1.98" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="566.60" state="leave" vehID="m197" speed="2.59" length="2.10" type="moped" occupancy="0.87"/>
+    <instantOut id="e1i_E0" time="568.15" state="enter" vehID="m199" speed="3.48" length="2.10" type="moped" gap="1.55"/>
+    <instantOut id="e1i_E0" time="568.75" state="leave" vehID="m199" speed="3.48" length="2.10" type="moped" occupancy="0.60"/>
+    <instantOut id="e1i_E0" time="568.00" state="enter" vehID="c162" speed="2.12" length="5.00" type="car" gap="-0.75"/>
+    <instantOut id="e1i_E0" time="569.00" state="stay" vehID="c162" speed="2.12" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="570.00" state="stay" vehID="c162" speed="0.00" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="571.00" state="stay" vehID="c162" speed="1.08" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="571.56" state="leave" vehID="c162" speed="3.25" length="5.00" type="car" occupancy="3.55"/>
+    <instantOut id="e1i_E0" time="573.07" state="enter" vehID="c163" speed="5.76" length="5.00" type="car" gap="1.52"/>
+    <instantOut id="e1i_E0" time="573.94" state="leave" vehID="c163" speed="5.76" length="5.00" type="car" occupancy="0.87"/>
+    <instantOut id="e1i_E0" time="575.74" state="enter" vehID="c170" speed="6.23" length="5.00" type="car" gap="1.80"/>
+    <instantOut id="e1i_E0" time="576.00" state="stay" vehID="c170" speed="6.23" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="576.40" state="leave" vehID="c170" speed="8.50" length="5.00" type="car" occupancy="0.66"/>
+    <instantOut id="e1i_E0" time="578.21" state="enter" vehID="c174" speed="6.20" length="5.00" type="car" gap="1.81"/>
+    <instantOut id="e1i_E0" time="579.00" state="stay" vehID="c174" speed="6.20" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="579.01" state="leave" vehID="c174" speed="8.16" length="5.00" type="car" occupancy="0.80"/>
+    <instantOut id="e1i_E0" time="580.34" state="enter" vehID="c172" speed="8.52" length="5.00" type="car" gap="1.32"/>
+    <instantOut id="e1i_E0" time="580.92" state="leave" vehID="c172" speed="8.52" length="5.00" type="car" occupancy="0.59"/>
+    <instantOut id="e1i_E0" time="582.21" state="enter" vehID="c186" speed="9.59" length="5.00" type="car" gap="1.29"/>
+    <instantOut id="e1i_E0" time="582.73" state="leave" vehID="c186" speed="9.59" length="5.00" type="car" occupancy="0.52"/>
+    <instantOut id="e1i_E0" time="587.21" state="enter" vehID="c196" speed="11.18" length="5.00" type="car" gap="4.48"/>
+    <instantOut id="e1i_E0" time="587.66" state="leave" vehID="c196" speed="11.18" length="5.00" type="car" occupancy="0.45"/>
+    <instantOut id="e1i_E0" time="664.95" state="enter" vehID="m211" speed="0.76" length="2.10" type="moped" gap="77.29"/>
+    <instantOut id="e1i_E0" time="665.00" state="stay" vehID="m211" speed="0.76" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="664.53" state="enter" vehID="c197" speed="1.35" length="5.00" type="car" gap="76.87"/>
+    <instantOut id="e1i_E0" time="665.00" state="stay" vehID="c197" speed="1.35" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="666.00" state="stay" vehID="c197" speed="3.85" length="5.00" type="car"/>
+    <instantOut id="e1i_E0" time="666.00" state="stay" vehID="m211" speed="1.34" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="666.09" state="leave" vehID="c197" speed="6.04" length="5.00" type="car" occupancy="1.55"/>
+    <instantOut id="e1i_E0" time="666.33" state="leave" vehID="m211" speed="2.20" length="2.10" type="moped" occupancy="1.38"/>
+    <instantOut id="e1i_E0" time="668.28" state="enter" vehID="m212" speed="1.90" length="2.10" type="moped" gap="1.95"/>
+    <instantOut id="e1i_E0" time="669.00" state="stay" vehID="m212" speed="1.90" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="668.81" state="enter" vehID="m217" speed="2.42" length="2.10" type="moped" gap="2.48"/>
+    <instantOut id="e1i_E0" time="669.00" state="stay" vehID="m217" speed="2.42" length="2.10" type="moped"/>
+    <instantOut id="e1i_E0" time="669.60" state="leave" vehID="m217" speed="2.77" length="2.10" type="moped" occupancy="0.78"/>
+    <instantOut id="e1i_E0" time="669.30" state="leave" vehID="m212" speed="2.42" length="2.10" type="moped" occupancy="1.02"/>
+    <instantOut id="e1i_E0" time="671.09" state="enter" vehID="m236" speed="2.43" length="2.10" type="moped" gap="1.79"/>
+    <instantOut id="e1i_E0" time="671.96" state="leave" vehID="m236" speed="2.43" length="2.10" type="moped" occupancy="0.86"/>
+    <instantOut id="e1i_E0" time="688.70" state="enter" vehID="m242" speed="10.25" length="2.10" type="moped" gap="16.74"/>
+    <instantOut id="e1i_E0" time="688.90" state="leave" vehID="m242" speed="10.25" length="2.10" type="moped" occupancy="0.20"/>
+</instantE1>

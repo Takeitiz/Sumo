@@ -2,14 +2,14 @@
   {
     "sumoId": "C",
     "intersectionId": 1,
-    "saturationVolume": 1900,
+    "saturationVolume": 50000,
     "stages": [
       {
         "id": 1,
         "oldId": "stage1",
         "phaseIndex": 0,
         "minGreenTime": 15,
-        "maxGreenTime": 60,
+        "maxGreenTime": 120,
         "yellow": 3,
         "redClear": 2,
         "weight": 0.5,

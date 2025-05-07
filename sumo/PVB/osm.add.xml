@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-03-24 17:07:08 by Eclipse SUMO netedit Version 1.22.0
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <!-- Calibrators -->
+    <calibrator id="ca_0" edge="N2C" pos="0.00"/>
+    <!-- Detectors -->
+    <inductionLoop id="e1_0" lane="N2C_0" pos="297.80" period="300.00" file="e1_0.xml" vTypes="moped"/>
+    <inductionLoop id="e1_1" lane="N2C_1" pos="297.25" period="300.00" file="e1_1.xml" vTypes="moped"/>
+    <inductionLoop id="e1_2" lane="N2C_2" pos="298.18" period="300.00" file="e1_2.xml" vTypes="moped"/>
+    <inductionLoop id="e1_3" lane="W2C_0" pos="197.58" period="300.00" file="e1_3.xml" vTypes="moped"/>
+    <inductionLoop id="e1_4" lane="S2C_0" pos="151.76" period="300.00" file="e1_4.xml" vTypes="moped"/>
+    <inductionLoop id="e1_5" lane="S2C_1" pos="151.14" period="300.00" file="e1_5.xml" vTypes="moped"/>
+    <inductionLoop id="e1_6" lane="S2C_2" pos="151.49" period="300.00" file="e1_6.xml" vTypes="moped"/>
+    <inductionLoop id="e1_7" lane="E2W_0" pos="224.32" period="300.00" file="e1_7.xml" vTypes="moped"/>
+    <instantInductionLoop id="e1i_E0" lane="E2W_0" pos="231.50" file="e1i_3.xml"/>
+    <instantInductionLoop id="e1i_N0" lane="N2C_0" pos="302.83" file="e1i_0.xml"/>
+    <instantInductionLoop id="e1i_N1" lane="N2C_1" pos="302.66" file="e1i_1.xml"/>
+    <instantInductionLoop id="e1i_N2" lane="N2C_2" pos="302.75" file="e1i_2.xml"/>
+    <instantInductionLoop id="e1i_S0" lane="S2C_0" pos="155.23" file="e1i_4.xml"/>
+    <instantInductionLoop id="e1i_S1" lane="S2C_1" pos="155.33" file="e1i_5.xml"/>
+    <instantInductionLoop id="e1i_S2" lane="S2C_2" pos="155.30" file="e1i_6.xml"/>
+    <instantInductionLoop id="e1i_W0" lane="W2C_0" pos="202.23" file="e1i_7.xml"/>
+</additional>

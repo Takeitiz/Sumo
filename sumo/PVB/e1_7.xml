@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-03-24 17:21:02 by Eclipse SUMO GUI Version 1.22.0
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value=".\osm.net.xml"/>
+        <route-files value=".\pvb.rou.xml"/>
+        <additional-files value=".\osm.add.xml"/>
+    </input>
+
+    <processing>
+        <lateral-resolution value="0.5"/>
+        <ignore-route-errors value="true"/>
+        <tls.actuated.jam-threshold value="30"/>
+    </processing>
+
+    <routing>
+        <device.rerouting.adaptation-steps value="18"/>
+        <device.rerouting.adaptation-interval value="10"/>
+    </routing>
+
+    <report>
+        <verbose value="true"/>
+        <duration-log.statistics value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <gui_only>
+        <gui-settings-file value=".\osm.view.xml"/>
+    </gui_only>
+
+</sumoConfiguration>
+-->
+
+<detector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/det_e1_file.xsd">
+    <interval begin="0.00" end="300.00" id="e1_7" nVehContrib="9" flow="108.00" occupancy="4.23" speed="6.22" harmonicMeanSpeed="1.49" length="2.10" nVehEntered="9"/>
+    <interval begin="300.00" end="600.00" id="e1_7" nVehContrib="11" flow="132.00" occupancy="12.23" speed="4.33" harmonicMeanSpeed="0.63" length="2.10" nVehEntered="11"/>
+    <interval begin="600.00" end="756.00" id="e1_7" nVehContrib="5" flow="115.38" occupancy="37.46" speed="6.21" harmonicMeanSpeed="0.18" length="2.10" nVehEntered="5"/>
+</detector>

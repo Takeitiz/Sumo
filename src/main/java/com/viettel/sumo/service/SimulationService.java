@@ -1,6 +1,7 @@
 package com.viettel.sumo.service;
 
 import com.viettel.sumo.config.SumoConfig;
+import com.viettel.sumo.model.TrafficControlMode;
 import com.viettel.sumo.model.WebsterInputDTO;
 import com.viettel.sumo.model.WebsterOutputDTO;
 import lombok.RequiredArgsConstructor;
@@ -18,6 +19,7 @@ public class SimulationService {
     private final SumoService sumoService;
     private final WebsterService websterService;
     private final SumoConfig sumoConfig;
+    private final TrafficControlService trafficControlService;
 
     public void startSimulation() {
         sumoService.startSimulation();
@@ -39,9 +41,12 @@ public class SimulationService {
 
         sumoService.stepSimulation();
 
-        double simTime = Simulation.getTime();
-        if (simTime > 0 && simTime % sumoConfig.getOptimizationInterval() == 0) {
-            optimizeTrafficSignals();
+        // Only optimize traffic signals if we're in adaptive mode
+        if (trafficControlService.getCurrentMode() == TrafficControlMode.ADAPTIVE_MODE) {
+            double simTime = Simulation.getTime();
+            if (simTime > 0 && simTime % sumoConfig.getOptimizationInterval() == 0) {
+                optimizeTrafficSignals();
+            }
         }
     }
 
@@ -51,14 +56,12 @@ public class SimulationService {
         StringVector tlIDs = TrafficLight.getIDList();
 
         for (String tlID : tlIDs) {
-
             WebsterInputDTO input = sumoService.prepareWebsterInput(tlID);
             if (input == null) {
                 continue;
             }
 
             WebsterOutputDTO output = websterService.calculateWebster(input);
-
             sumoService.applyWebsterOutput(tlID, output);
         }
     }
@@ -71,9 +74,12 @@ public class SimulationService {
         for (int i = 0; i < steps; i++) {
             sumoService.stepSimulation();
 
-            double simTime = Simulation.getTime();
-            if (simTime > 0 && simTime % sumoConfig.getOptimizationInterval() == 0) {
-                optimizeTrafficSignals();
+            // Only optimize if in adaptive mode
+            if (trafficControlService.getCurrentMode() == TrafficControlMode.ADAPTIVE_MODE) {
+                double simTime = Simulation.getTime();
+                if (simTime > 0 && simTime % sumoConfig.getOptimizationInterval() == 0) {
+                    optimizeTrafficSignals();
+                }
             }
         }
     }

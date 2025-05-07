@@ -73,8 +73,6 @@ public class SumoDataConverter {
             roads.add(road);
         }
         input.setRoads(roads);
-
-        System.out.println(input);
         return input;
     }
 

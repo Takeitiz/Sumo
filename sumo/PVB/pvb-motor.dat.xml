@@ -5,9 +5,9 @@
 
 <data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/datamode_file.xsd">
     <interval id="demo" begin="0.00" end="3600.00">
-        <edge id="N2C" entered="1641"/>
-        <edge id="W2C" entered="233"/>
-        <edge id="S2C" entered="1408"/>
-        <edge id="E2W" entered="298"/>
+        <edge id="N2C" entered="587"/>
+        <edge id="W2C" entered="403"/>
+        <edge id="S2C" entered="316"/>
+        <edge id="E2W" entered="126"/>
     </interval>
 </data>

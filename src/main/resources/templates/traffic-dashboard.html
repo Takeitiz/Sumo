@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUMO Traffic Control Dashboard</title>
+    <link rel="stylesheet" th:href="@{/css/dashboard.css}">
+</head>
+<body>
+<div class="container">
+    <h1>SUMO Traffic Control Dashboard</h1>
+
+    <!-- Simulation Control Panel -->
+    <div class="panel simulation-panel">
+        <h2>Simulation Control</h2>
+        <div class="button-group">
+            <button id="startSimulation" class="control-button start-button">
+                Start Simulation
+            </button>
+            <button id="stopSimulation" class="control-button stop-button">
+                Stop Simulation
+            </button>
+            <div class="run-steps-container">
+                <input type="number" id="stepsInput" min="1" max="1000" value="100" />
+                <button id="runSteps" class="control-button run-steps-button">
+                    Run Steps
+                </button>
+            </div>
+        </div>
+        <div id="simulationStatus" class="status">
+            Simulation Status: Loading...
+        </div>
+    </div>
+
+    <!-- Traffic Control Panel -->
+    <div class="panel traffic-panel">
+        <h2>Traffic Light Control</h2>
+        <div class="control-panel">
+            <button class="control-button red-mode" data-mode="RED_MODE">
+                Emergency Stop<br>(All Red)
+            </button>
+            <button class="control-button yellow-mode" data-mode="YELLOW_MODE">
+                Caution<br>(All Yellow)
+            </button>
+            <button class="control-button normal-mode" data-mode="NORMAL_MODE">
+                Normal<br>Operation
+            </button>
+            <button class="control-button next-phase" data-mode="NEXT_PHASE_MODE">
+                Next<br>Phase
+            </button>
+            <button class="control-button lights-off" data-mode="LIGHTS_OFF_MODE">
+                Lights<br>Off
+            </button>
+            <button class="control-button adaptive-mode" data-mode="ADAPTIVE_MODE">
+                Adaptive<br>Control
+            </button>
+        </div>
+        <div id="currentStatus" class="status">
+            Traffic Control Mode: Loading...
+        </div>
+    </div>
+
+    <!-- Log Panel -->
+    <div class="panel log-panel">
+        <h2>Event Log</h2>
+        <div class="log" id="log">
+            <!-- Log entries will be added here -->
+        </div>
+    </div>
+</div>
+
+<script th:src="@{/js/traffic-control.js}"></script>
+</body>
+</html>
